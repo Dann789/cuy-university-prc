@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas No 2</title>
+    <link rel="shortcut icon" href="/assets/images/light-bulb.png" type="image/x-icon">
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+    <a href="/Tugas/Halaman Awal/main.html"><button><svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M6 12L11 7M6 12L11 17" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg></button></a>
+    <h1>Fungsi Lampu Setiap Ruangan (Javascript)</h1>
+    <p>Bisa Dicoba Lampunya &#128521</p>
+
+    <!--Daerah Lampu-->
+    <div class="container">
+        <!--Ruang Tamu-->
+        <div class="position">
+            <h2>Ruang Tamu</h2>
+            <label for="tombol1" class="switch">
+                <input type="checkbox" id="tombol1" onchange="press()" />
+                <span class="slider round"></span>
+              </label>
+            <div class="lamp">
+                <img src="/assets/images/off.gif" height="144px" width="80px" alt="lampu1" id="lampu1" />
+                <img src="/assets/images/off.gif" height="144px" width="80px" alt="lampu2" id="lampu2" />
+                <img src="/assets/images/off.gif" height="144px" width="80px" alt="lampu3" id="lampu3" />
+                <img src="/assets/images/off.gif" height="144px" width="80px" alt="lampu4" id="lampu4" />
+            </div>
+        </div>
+
+        <!--Ruang Keluarga-->
+        <div class="position">
+            <h2>Ruang Keluarga</h2>
+            <label for="tombol2" class="switch">
+                <input type="checkbox" id="tombol2" onchange="press()" />
+                <span class="slider round"></span>
+              </label>
+            <div class="lamp">
+                <img src="/assets/images/off.gif" height="144px" width="80px" alt="lampu5" id="lampu5" />
+                <img src="/assets/images/off.gif" height="144px" width="80px" alt="lampu6" id="lampu6" />
+                <img src="/assets/images/off.gif" height="144px" width="80px" alt="lampu7" id="lampu7" />
+            </div>
+        </div>
+
+        <!--Ruang Makan-->
+        <div class="position">
+            <h2>Ruang Makan</h2>
+            <label for="tombol3" class="switch">
+                <input type="checkbox" id="tombol3" onchange="press()" />
+                <span class="slider round"></span>
+              </label>
+            <div class="lamp" id="lamp-3">
+                <img src="/assets/images/off.gif" height="144px" width="80px" alt="lampu8" id="lampu8" />
+            </div>
+        </div>
+
+        <!-- Kamar Tidur-->
+        <div class="position">
+            <h2>Kamar Tidur</h2>
+            <label for="tombol4" class="switch">
+                <input type="checkbox" id="tombol4" onchange="press()" />
+                <span class="slider round"></span>
+              </label>
+            <div class="lamp">
+                <img src="/assets/images/off.gif" height="144px" width="80px" alt="lampu9" id="lampu9" />
+                <img src="/assets/images/off.gif" height="144px" width="80px" alt="lampu10" id="lampu10" />
+            </div>
+        </div>
+    </div>
+
+    <script src="tombol2.js"></script>
+</body>
+</html>

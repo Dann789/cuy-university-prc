@@ -1,0 +1,15 @@
+TUGAS CUY UNIVERSITY SEMESTER 1 SESI 4 WEB
+
+Judul Sesi: Cetrak Cetrek Lampu Javascript
+
+1. Bikin 10 lampu dengan fungsi sama seperti materi pembelajaran
+2. Bikin 5 grup lampu (ruangan) dengan detail sebagai berikut:
+ - Ruangan Keluarga (3 Lampu)
+ - Ruangan Makan (1 Lampu)
+ - Ruangan Tidur (2 Lampu)
+ - Ruangan Tamu (4 Lampu)
+
+NOTES:Ada tombol saklar per lampu atau tombol saklar per grup.
+
+3. Bonus Tampilan dibikin semenarik mungkin
+4. Bebas Berkreasi

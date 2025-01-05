@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template HTML Basic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="home">
+        <div class="container">
+            <!-- Navigation Bar -->
+            <div class="navwrapper">
+                <ul class="navigation">
+                    <li class="nav">
+                        <a href="#home" class="navlink">HOME</a>
+                    </li>
+                    <li class="nav">
+                        <a href="#about" class="navlink">ABOUT</a>
+                    </li>
+                    <li class="nav">
+                        <a href="#contact" class="navlink">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contentwrapper">
+                <h1>HOME</h1>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <div class="container merah">
+            <div class="contentwrapper">
+                <h1>ABOUT</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container biru">
+            <div class="contentwrapper">
+                <h1>CONTACT</h1>
+            </div>
+        </div>
+    </section>
+    <div class="top" onclick="goTop()">☝</div>
+
+    <script>
+        const goTop = () => {
+            return location.href = "#home"
+        }
+    </script>
+</body>
+</html>

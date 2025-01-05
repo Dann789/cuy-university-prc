@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Games - Suit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="summary">
+        <h1 class="title">MATCH RESULT</h1>
+        <h1 class="result"></h1>
+      </div>
+      <div class="games">
+        <div class="option" onclick="pickOption('🖐')">🖐</div>
+        <div class="option" onclick="pickOption('✌')">✌</div>
+        <div class="option" onclick="pickOption('✊')">✊</div>
+      </div>
+    </div>
+
+    <script>
+        class Start {
+            constructor() {
+                this.playerName = "Kamu"
+                this.botName = "WillyBot"
+                this.playerOption
+                this.botOption
+                this.winner = ""
+            }
+
+            get getBotOption() {
+                return this.botOption
+            }
+
+            set setBotOption(option) {
+                this.botOption = option
+            }
+
+            get getPlayerOption() {
+                return this.playerOption
+            }
+
+            set setPlayerOption(option) {
+                this.playerOption = option
+            }
+
+            botPick() {
+                const option = ["🖐", "✌", "✊"];
+                const bot = option[Math.floor(Math.random() = option.length)];
+                console.log("bot pilih ",bot.toString());
+            }
+
+        }
+
+        function pickOption(parameter) {
+            const start = new Start()
+            start.setPlayerOption = parameter
+            // console.log("Kamu Memilih ",start.getPlayerOption)
+            start.botPick();
+        }
+    </script>
+  </body>
+</html>
