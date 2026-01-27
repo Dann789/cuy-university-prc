@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sesi 6 Cuy University</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a onclick="reload()" id="home">HOME</a>
+            <a onclick="darkMode()" id="mode">MODE DARK</a>
+            <a onclick="beraniMode()" id="mode">MODE BERANI</a>
+            <a onclick="jombloMode()" id="mode">MODE JOMBLO</a>
+        </nav>
+        <h1>Sesi 6 Cuy University</h1>
+        <p class="info" id="info"></p>
+        <p class="info" id="berani"></p>
+        <p class="info" id="jomblo"></p>
+    </div>
+
+    <script>
+        let body = document.body;
+        let info  = document.getElementById('info');
+        let berani = document.getElementById('berani');
+        let jomblo  = document.getElementById('jomblo');
+        let mode = document.getElementById('mode');
+        let home = document.getElementById('home');
+
+        let isDark = false;
+        let isBerani = false;
+        let isJomblo = false;
+        const limit = 5;
+        let counter = 0;
+        let remaining;
+        function darkMode() {
+            if(remaining == 1) {
+                info.textContent = `Batas klik Dark Mode sudah tercapai.`;
+                mode.style.display = 'none';
+                home.textContent = 'RESTART';
+                return;
+            }
+
+            if(isDark == false) {
+                isDark = true;
+                mode.textContent = 'MODE LIGHT';
+            } else {
+                isDark = false;
+                mode.textContent = 'MODE DARK';
+            }
+
+            counter++;
+            remaining = limit - counter;
+            // Render isi Info P
+            info.textContent = `Dark Mode diklik ${counter} kali, sisa ${remaining} kali.`;
+            body.classList.toggle('dark')
+        }
+
+        function reload() {
+            location.reload();
+        }
+
+        function beraniMode() {
+            body.classList.toggle('berani');
+            if (isBerani == false) {
+                isBerani = true;
+                berani.textContent = 'Berani Mode Active';
+            } else {
+                isBerani = false;
+                berani.style.display = 'none';
+            }
+        }
+
+        function jombloMode() {
+            body.classList.toggle('jomblo');
+            if (isJomblo == false) {
+                isJomblo =  true;
+                jomblo.textContent = 'Jomblo Mode Active';
+            } else {
+                isJomblo = false;
+                jomblo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
